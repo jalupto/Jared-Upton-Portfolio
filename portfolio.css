@@ -1,0 +1,306 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'HiLo-Deco', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-home {
+    margin-right: 50vw;
+}
+
+.container-fluid>a, .download>a {
+    color: white;
+    text-decoration: none;
+}
+
+.bgimg-1 {
+    background-image: url('assets/portfolio-home.jpg');
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome {
+    -webkit-text-fill-color: rgb(252,252,252);
+    -webkit-text-stroke: 2px black;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    top: 5vh;
+    font-size: 5rem;
+    font-family: 'Dyer Arts and Crafts', sans-serif;
+}
+
+.welcome2 {
+    -webkit-text-fill-color: rgb(252,252,252);
+    -webkit-text-stroke: 2px black;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    top: 55vh;
+    font-size: 4rem;
+    font-family: 'Nickerbocker NF', sans-serif;
+}
+
+#portfolio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: auto;
+    box-sizing: content-box;
+    width: 100%;
+    padding-top: 6.525%;
+    padding-left: 6.525%;
+    padding-right: 6.525%;
+    background-color: #dfd9c9;
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+#appContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 1%;
+    height: 400px;
+    padding: 3%;
+}
+
+.cardLink {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 1%;
+    height: 400px;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.col-4:hover .imgBox {
+    top: -40%;
+}
+
+.col-4:hover .description {
+    top: 10%;
+    visibility: visible;
+}
+
+.imgBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+img {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.5);
+}
+
+.description {
+    position: relative;
+    margin-top: -50%;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+}
+
+h3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 6.5%;
+    -webkit-text-stroke: 1px rgb(216, 195, 77);
+    font-size: 5rem;
+    font-family: 'Cameo Appearance NF', sans-serif;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50% 50% 10px 10px;
+    backdrop-filter: blur(1.5px);
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: inset 4px 4px 10px rgba(75, 75, 75, 0.5);
+}
+
+.bgimg-2 {
+    background-image: url('assets/epicPortrait.PNG');
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.display-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+#past, #future {
+    text-align: justify;
+}
+
+span {
+    position: relative;
+    top: 30px;
+    width: 550vw;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Nickerbocker NF', sans-serif;
+    -webkit-text-fill-color: rgb(252,252,252);
+    -webkit-text-stroke: 2px black;
+}
+
+.resume {
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.download {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    border: solid 2px rgb(216, 195, 77);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.5);
+    padding: 2%;
+}
+
+.left, .left2, .right {
+    font-family: 'Nickerbocker NF', sans-serif;
+    font-size: 3rem;
+    -webkit-text-stroke: 1px rgb(216, 195, 77);
+    text-shadow: 1px 1px 2px black;
+    padding: 30px;
+}
+
+.left2 {
+    position: relative;
+    top: 9vh;
+    width: 100%;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 99px;
+    background-color: #dfd9c9;
+background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
+}
+
+#contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+}
+
+.form-floating {
+    height: auto;
+}
+
+#floatingName, #floatingTextarea {
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.5);
+}
+
+#floatingInput {
+    box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.5);
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.footer {
+    padding: 50px;
+}
+
+#footer {
+    font-size: 1.5rem;
+    font-family: 'Nickerbocker NF', sans-serif;
+}
+
+button {
+    background-color: black;
+    border-radius: 10px;
+    border-color: rgb(216, 195, 77);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.5);
+}
+
+.bi.bi-github {
+    position: relative;
+    top: 9vh;
+    left: 50px;
+    transform: scale(4);
+    color: black;
+    border: solid 1px rgb(216, 195, 77);
+    border-radius: 50%;
+    background: white;
+}
+
+.bi.bi-linkedin {
+    position: relative;
+    top: 9vh;
+    left: 150px;
+    transform: scale(4);
+    color: black;
+    border: solid 1px rgb(216, 195, 77);
+    border-radius: 2px;
+    background: white;
+}
+
+li {
+    display: inline-block;
+}
