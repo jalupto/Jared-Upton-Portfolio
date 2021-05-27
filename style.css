@@ -1,9 +1,14 @@
-body, html {
+/* * {
+    border: solid 1px red;
+} */
+
+body,
+html {
     height: 100%;
     width: 100%;
     font-family: 'HiLo-Deco', sans-serif;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.5vw;
     margin: 0;
 }
 
@@ -16,7 +21,8 @@ body, html {
     margin-right: 50vw;
 }
 
-.container-fluid>a, .download>a {
+.container-fluid>a,
+.download>a {
     color: white;
     text-decoration: none;
 }
@@ -31,28 +37,28 @@ body, html {
 }
 
 .welcome {
-    -webkit-text-fill-color: rgb(252,252,252);
+    -webkit-text-fill-color: rgb(252, 252, 252);
     -webkit-text-stroke: 2px black;
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    top: 5vh;
-    font-size: 5rem;
+    top: 8vh;
+    font-size: 5vw;
     font-family: 'Dyer Arts and Crafts', sans-serif;
 }
 
 .welcome2 {
-    -webkit-text-fill-color: rgb(252,252,252);
+    -webkit-text-fill-color: rgb(252, 252, 252);
     -webkit-text-stroke: 2px black;
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    top: 55vh;
-    font-size: 4rem;
+    top: 58vh;
+    font-size: 4vw;
     font-family: 'Nickerbocker NF', sans-serif;
 }
 
@@ -63,22 +69,16 @@ body, html {
     height: auto;
     box-sizing: content-box;
     width: 100%;
-    padding-top: 6.525%;
-    padding-left: 6.525%;
-    padding-right: 6.525%;
+    padding: 6.525% 6.525% 0 6.525%;
     background-color: #dfd9c9;
     background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 }
 
 #appContainer {
-    position: relative;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-.col-4 {
+.col-xs-4 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -99,13 +99,14 @@ body, html {
     text-decoration: none;
 }
 
-.col-4:hover .imgBox {
-    top: -40%;
-}
-
-.col-4:hover .description {
-    top: 10%;
-    visibility: visible;
+@media only screen and (min-width: 769px) {
+    .col-xs-4:hover .imgBox {
+        transform: translateY(-50%);
+        transition: 0.75s;
+    }
+    .col-xs-4:hover .description {
+        visibility: visible;
+    }
 }
 
 .imgBox {
@@ -113,6 +114,7 @@ body, html {
     width: 100%;
     height: auto;
     z-index: 2;
+    transition: 0.75s;
 }
 
 img {
@@ -130,8 +132,14 @@ img {
     position: relative;
     margin-top: -50%;
     text-align: center;
+    font-size: 1.5vw;
     color: black;
+    background-color: white;
+    border-radius: 10px;
+    background-clip: content-box;
+    box-shadow: inset 4px 4px 10px rgba(75, 75, 75, 0.5);
     visibility: hidden;
+    transition: 0.75s;
 }
 
 h3 {
@@ -142,7 +150,7 @@ h3 {
     width: 50%;
     margin-bottom: 6.5%;
     -webkit-text-stroke: 1px rgb(216, 195, 77);
-    font-size: 5rem;
+    font-size: 7vw;
     font-family: 'Cameo Appearance NF', sans-serif;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 50% 50% 10px 10px;
@@ -150,6 +158,10 @@ h3 {
     line-height: 1.5;
     text-shadow: 1px 1px 2px black;
     box-shadow: inset 4px 4px 10px rgba(75, 75, 75, 0.5);
+}
+
+h2 {
+    font-size: 2vw;
 }
 
 .bgimg-2 {
@@ -169,22 +181,24 @@ h3 {
     width: 100%;
     margin-top: 100px;
     margin-bottom: 150px;
+    font-size: 1.5vw;
 }
 
-#past, #future {
+#past,
+#future {
     text-align: justify;
 }
 
 span {
     position: relative;
     top: 30px;
-    width: 550vw;
+    /* width: 550vw; */
     padding: 10%;
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 4vw;
     font-family: 'Nickerbocker NF', sans-serif;
-    -webkit-text-fill-color: rgb(252,252,252);
+    -webkit-text-fill-color: rgb(252, 252, 252);
     -webkit-text-stroke: 2px black;
 }
 
@@ -210,7 +224,9 @@ span {
     padding: 2%;
 }
 
-.left, .left2, .right {
+.left,
+.left2,
+.right {
     font-family: 'Nickerbocker NF', sans-serif;
     font-size: 3rem;
     -webkit-text-stroke: 1px rgb(216, 195, 77);
@@ -226,13 +242,13 @@ span {
 
 #contact-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     box-sizing: content-box;
     width: 100%;
     padding: 99px;
     background-color: #dfd9c9;
-background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
 }
 
 #contact {
@@ -247,7 +263,8 @@ background-image: url("https://www.transparenttextures.com/patterns/black-thread
     height: auto;
 }
 
-#floatingName, #floatingTextarea {
+#floatingName,
+#floatingTextarea {
     margin-bottom: 20px;
     box-shadow: 2px 2px 10px rgba(75, 75, 75, 0.5);
 }
@@ -303,4 +320,113 @@ button {
 
 li {
     display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    body,
+    h2,
+    #footer {
+        font-size: 4vw;
+    }
+    .bgimg-1,
+    .bgimg-2 {
+        background-attachment: scroll;
+    }
+    .navbar-home {
+        margin-right: 20vw;
+    }
+    .welcome {
+        font-size: 12vw;
+    }
+    .welcome2,
+    span {
+        font-size: 10vw;
+    }
+    span {
+        top: -125vh;
+    }
+    .display-middle {
+        flex-flow: column;
+        justify-content: center;
+    }
+    #past,
+    #future {
+        font-size: 4vw;
+        margin: 10%;
+        padding: 10% 0 10% 0;
+    }
+    #past {
+        position: relative;
+        top: -13vh;
+    }
+    #future {
+        position: relative;
+        top: 15vh;
+    }
+    #portfolio,
+    #contact-container {
+        box-sizing: border-box;
+        padding: 6% 0 0 0;
+    }
+    #contact-container {
+        position: relative;
+        top: -20vh;
+        padding-bottom: 10%;
+    }
+    #contact {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left2,
+    .download {
+        position: relative;
+        top: -2vh;
+    }
+    .social {
+        position: relative;
+        top: -10vh;
+    }
+    #appContainer {
+        position: relative;
+        margin-right: 0;
+        left: -8vw;
+    }
+    h3 {
+        font-size: 15vw;
+        width: 100%;
+    }
+    #floatingName,
+    #floatingInput,
+    #floatingTextarea,
+    .download,
+    button {
+        box-shadow: none;
+        font-size: 4vw;
+    }
+    #floatingName,
+    #floatingInput,
+    #floatingTextarea {
+        margin: 0 0 10% 0;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .left,
+    .left2,
+    .right {
+        font-size: 10vw;
+    }
+    .description {
+        visibility: visible;
+        z-index: 3;
+        margin-top: 0;
+        transition: 0s;
+        width: 300px;
+        font-size: 4vw;
+    }
+    #footer {
+        position: relative;
+        top: -20vh;
+        font-size: 6vw;
+    }
 }
