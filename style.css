@@ -1,33 +1,28 @@
 @font-face {
-    font-family: Cameo;
+    font-family: 'Cameo';
     src: url('assets/CameoAppearanceNF.ttf');
 }
 
 @font-face {
-    font-family: Dyer;
+    font-family: 'Dyer';
     src: url('assets/Dyer-Arts-and-Crafts.ttf');
 }
 
 @font-face {
-    font-family: HiLo;
+    font-family: 'HiLo';
     src: url('assets/HiLo-Deco.ttf');
 }
 
 @font-face {
-    font-family: Nicker;
+    font-family: 'Nicker';
     src: url('assets/NickerbockerNF.ttf');
-}
-
-@font-face {
-    font-family: Souci;
-    src: url('assets/SouciSansNF.ttf');
 }
 
 body,
 html {
     height: 100%;
     width: 100%;
-    font-family: 'HiLo-Deco', sans-serif;
+    font-family: 'HiLo', sans-serif;
     font-weight: 700;
     font-size: 1.5vw;
     margin: 0;
@@ -67,7 +62,7 @@ html {
     justify-content: center;
     top: 8vh;
     font-size: 5vw;
-    font-family: 'Dyer Arts and Crafts', sans-serif;
+    font-family: 'Dyer', sans-serif;
 }
 
 .welcome2 {
@@ -80,7 +75,7 @@ html {
     justify-content: center;
     top: 58vh;
     font-size: 4vw;
-    font-family: 'Nickerbocker NF', sans-serif;
+    font-family: 'Nicker', sans-serif;
 }
 
 #portfolio {
@@ -172,7 +167,7 @@ h3 {
     margin-bottom: 6.5%;
     -webkit-text-stroke: 1px rgb(216, 195, 77);
     font-size: 7vw;
-    font-family: 'Cameo Appearance NF', sans-serif;
+    font-family: 'Cameo', sans-serif;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 50% 50% 10px 10px;
     backdrop-filter: blur(1.5px);
@@ -217,7 +212,7 @@ span {
     display: flex;
     justify-content: center;
     font-size: 4vw;
-    font-family: 'Nickerbocker NF', sans-serif;
+    font-family: 'Nicker', sans-serif;
     -webkit-text-fill-color: rgb(252, 252, 252);
     -webkit-text-stroke: 2px black;
 }
@@ -247,7 +242,7 @@ span {
 .left,
 .left2,
 .right {
-    font-family: 'Nickerbocker NF', sans-serif;
+    font-family: 'Nicker', sans-serif;
     font-size: 3rem;
     -webkit-text-stroke: 1px rgb(216, 195, 77);
     text-shadow: 1px 1px 2px black;
@@ -305,7 +300,7 @@ form {
 
 #footer {
     font-size: 1.5rem;
-    font-family: 'Nickerbocker NF', sans-serif;
+    font-family: 'Nicker', sans-serif;
 }
 
 button {
