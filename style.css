@@ -1,6 +1,27 @@
-/* * {
-    border: solid 1px red;
-} */
+@font-face {
+    font-family: Cameo;
+    src: url('assets/CameoAppearanceNF.ttf');
+}
+
+@font-face {
+    font-family: Dyer;
+    src: url('assets/Dyer-Arts-and-Crafts.ttf');
+}
+
+@font-face {
+    font-family: HiLo;
+    src: url('assets/HiLo-Deco.ttf');
+}
+
+@font-face {
+    font-family: Nicker;
+    src: url('assets/NickerbockerNF.ttf');
+}
+
+@font-face {
+    font-family: Souci;
+    src: url('assets/SouciSansNF.ttf');
+}
 
 body,
 html {
