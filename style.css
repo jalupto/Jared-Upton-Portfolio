@@ -181,7 +181,6 @@ h2 {
     width: 100%;
     margin-top: 100px;
     margin-bottom: 150px;
-    font-size: 1.5vw;
 }
 
 #past,
@@ -192,8 +191,8 @@ h2 {
 span {
     position: relative;
     top: 30px;
-    /* width: 550vw; */
     padding: 10%;
+    width: 300vw;
     display: flex;
     justify-content: center;
     font-size: 4vw;
@@ -344,6 +343,10 @@ li {
     }
     span {
         top: -125vh;
+        width: auto;
+    }
+    #about {
+        padding-top: 10%;
     }
     .display-middle {
         flex-flow: column;
