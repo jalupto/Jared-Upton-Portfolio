@@ -54,7 +54,7 @@ html {
 
 .welcome {
     -webkit-text-fill-color: rgb(252, 252, 252);
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.5px black;
     position: relative;
     display: flex;
     flex-flow: column;
@@ -67,14 +67,14 @@ html {
 
 .welcome2 {
     -webkit-text-fill-color: rgb(252, 252, 252);
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.5px black;
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     top: 58vh;
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: 'Nicker', sans-serif;
 }
 
@@ -211,10 +211,10 @@ span {
     width: 300vw;
     display: flex;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: 'Nicker', sans-serif;
     -webkit-text-fill-color: rgb(252, 252, 252);
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .resume {
